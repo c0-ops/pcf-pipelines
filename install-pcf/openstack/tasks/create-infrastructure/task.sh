@@ -4,6 +4,9 @@ set -eu
 
 ROOT=$PWD
 
+echo "$OPENSTACK_CA_CERT" > /ca.crt
+export OS_CACERT='/ca.crt'
+
 function get_opsman_version() {
   cut -d\# -f 1 ops-manager/version
 }

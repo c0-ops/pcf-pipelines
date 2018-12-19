@@ -35,6 +35,7 @@ params:
   DYNAMIC_SERVICES_DNS:
   EXTERNAL_NETWORK:
   EXTERNAL_NETWORK_ID:
+  OPENSTACK_CA_CERT:
 
 run:
   path: pcf-pipelines/install-pcf/openstack/tasks/create-infrastructure/task.sh
