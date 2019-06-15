@@ -10,6 +10,11 @@ resource "google_sql_database_instance" "master" {
   settings {
     tier = "${var.db_cloudsqldb_tier}"
 
+    backup_configuration = {
+      binary_log_enabled = true
+      enabled = true
+    }
+
     ip_configuration = {
       ipv4_enabled = true
 
